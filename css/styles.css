@@ -42,6 +42,7 @@ img {
 }
 .contenedor {
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -135,7 +136,10 @@ h3 {
     background-color: #19376D;
     opacity: 85%;
     padding: 1rem;
-
+    border-radius: 8px;
+}
+.producto img{
+    border-radius: 8px;
 }
 .producto:hover {
     opacity: 100%;
@@ -161,6 +165,7 @@ h3 {
     min-height: 30rem;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 8px;
 }
 .grafico--camisas {
     grid-row: 2 / 3;
@@ -296,6 +301,12 @@ h3 {
     font-weight: 600;
     margin-bottom: 2rem;
 }
+.ayuda input, option, select, textarea {
+    opacity: 75%;
+}
+textarea{
+    resize: none;
+}
 input, textarea, select {
     width: 100%;
     padding: 1rem;
@@ -316,4 +327,71 @@ button {
     margin-top: 0.7rem;
     border-radius: 7px;
     background-color: var(--segundario);
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+/* PRODUCTOS EXCLUSIVOS */
+
+.productoex{
+    max-width: 1200px;
+    width: 95%;
+    background-color: #19376D;
+    opacity: 85%;
+    padding: 2rem;
+    margin: 5rem 0;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .productoex_tasa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        border-top-left-radius: 85px;
+        border-bottom-right-radius: 85px;
+        padding: 5rem;
+    }
+    .productoex_teclado {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        border-top-left-radius: 85px;
+        border-bottom-right-radius: 85px;
+        padding: 5rem;
+    }
+}
+.productoex img{
+    border-radius: 15px;
+}
+.productoex_information{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.productoex_price{
+    color: #FFCE00;
+    margin-bottom: 5rem;
+}
+.productoex_information a {
+    background-color: #FFCE00;
+    padding: 7px 9px ;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.productoex_information a:hover{
+    background-color: #FFF;
+    color: #FFCE00;
+    letter-spacing: 1px;
+}
+
+ 
+
+
